@@ -1,0 +1,14 @@
+C:\Users\MCwind\source\repos\UI\UI\bin\Debug\UI.exe.config
+C:\Users\MCwind\source\repos\UI\UI\bin\Debug\UI.exe
+C:\Users\MCwind\source\repos\UI\UI\bin\Debug\UI.pdb
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.FormMainMenu.resources
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.exe
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.pdb
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.Child_Form.FormProducts.resources
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.Child_Form.FormSetting.resources
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.Child_Form.FormCart.resources
+C:\Users\MCwind\source\repos\UI\UI\obj\Debug\UI.Child_Form.FormGames.resources
