@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI.Child_Form;
 
 namespace UI
 {
@@ -19,14 +20,29 @@ namespace UI
         private int tempIndex;
         private Form activeForm;
 
+        //lang
+        //private String language = "English";
+
         //Mouse LOC
         public Point mouseloc;
+        private LoginForm LForm;
+        private Boolean admin;
 
-        public FormMainMenu()
+        public FormMainMenu(LoginForm LF, Boolean staff)
         {
             InitializeComponent();
             random = new Random();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            LForm = LF;
+
+            //show staff interface
+            admin = staff;
+            if (staff)
+            {
+                btn_PA.Visible = true;
+                btn_RP.Visible = false;
+                btn_RPStaff.Visible = true;
+            }
         }
 
         //Methods
@@ -75,9 +91,19 @@ namespace UI
                     previousBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
+
+            foreach (Control previousBtn in panel1.Controls)
+            {
+                if (previousBtn.GetType() == typeof(Button))
+                {
+                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                    previousBtn.ForeColor = Color.Gainsboro;
+                    previousBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                }
+            }
         }
 
-        private void OpenChildForm(Form childForm, object btnSender)
+        internal void OpenChildForm(Form childForm, object btnSender)
         {
             if(activeForm != null)
             {
@@ -97,12 +123,12 @@ namespace UI
 
         private void btn_Products_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Child_Form.FormProducts(), sender);
+            OpenChildForm(new Child_Form.FormProfile(this), sender);
         }
 
         private void btn_Cart_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Child_Form.FormCart(), sender);
+            OpenChildForm(new Child_Form.FormPointCard(admin), sender);
         }
 
         private void btn_Games_Click(object sender, EventArgs e)
@@ -114,6 +140,8 @@ namespace UI
         {
             OpenChildForm(new Child_Form.FormSetting(), sender);
         }
+
+
 
         private void btn_closeChildForm_Click(object sender, EventArgs e)
         {
@@ -136,7 +164,7 @@ namespace UI
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btn_expand_Click(object sender, EventArgs e)
@@ -170,6 +198,27 @@ namespace UI
                     (this.Location.X - mouseloc.X) + e.X, (this.Location.Y - mouseloc.Y) + e.Y);
                 this.Update();
             }
+        }
+
+        private void btn_RP_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormReflectProblem(), sender);
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            LForm.Visible = true;
+            this.Close();
+        }
+
+        private void btn_PA_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormPlayerAccount(), sender);
+        }
+
+        private void btn_RPStaff_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormReceiveProblems(), sender);
         }
     }
 }

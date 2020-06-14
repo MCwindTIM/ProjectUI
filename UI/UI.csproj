@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Child_Form\FormCart.cs">
+    <Compile Include="Child_Form\FormPlayerAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Child_Form\FormCart.Designer.cs">
-      <DependentUpon>FormCart.cs</DependentUpon>
+    <Compile Include="Child_Form\FormPlayerAccount.Designer.cs">
+      <DependentUpon>FormPlayerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child_Form\FormPointCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Form\FormPointCard.Designer.cs">
+      <DependentUpon>FormPointCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Child_Form\FormGames.cs">
       <SubType>Form</SubType>
@@ -58,11 +64,17 @@
     <Compile Include="Child_Form\FormGames.Designer.cs">
       <DependentUpon>FormGames.cs</DependentUpon>
     </Compile>
-    <Compile Include="Child_Form\FormProducts.cs">
+    <Compile Include="Child_Form\FormProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Child_Form\FormProducts.Designer.cs">
-      <DependentUpon>FormProducts.cs</DependentUpon>
+    <Compile Include="Child_Form\FormProfile.Designer.cs">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child_Form\FormReceiveProblems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Form\FormReceiveProblems.Designer.cs">
+      <DependentUpon>FormReceiveProblems.cs</DependentUpon>
     </Compile>
     <Compile Include="Child_Form\FormSetting.cs">
       <SubType>Form</SubType>
@@ -70,39 +82,115 @@
     <Compile Include="Child_Form\FormSetting.Designer.cs">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Child_Form\FormReflectProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Form\FormReflectProblem.Designer.cs">
+      <DependentUpon>FormReflectProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyDesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyDesc.Designer.cs">
+      <DependentUpon>FormModiflyDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyEmail.Designer.cs">
+      <DependentUpon>FormModiflyEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyName.Designer.cs">
+      <DependentUpon>FormModiflyName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child_Form\Modifly\FormModiflyPassword.Designer.cs">
+      <DependentUpon>FormModiflyPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ThemeColor.cs" />
-    <EmbeddedResource Include="Child_Form\FormCart.resx">
-      <DependentUpon>FormCart.cs</DependentUpon>
+    <EmbeddedResource Include="Child_Form\FormPlayerAccount.resx">
+      <DependentUpon>FormPlayerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child_Form\FormPointCard.resx">
+      <DependentUpon>FormPointCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Child_Form\FormGames.resx">
       <DependentUpon>FormGames.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Child_Form\FormProducts.resx">
-      <DependentUpon>FormProducts.cs</DependentUpon>
+    <EmbeddedResource Include="Child_Form\FormProfile.resx">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child_Form\FormReceiveProblems.resx">
+      <DependentUpon>FormReceiveProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child_Form\FormReflectProblem.resx">
+      <DependentUpon>FormReflectProblem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Child_Form\FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Child_Form\Modifly\FormModiflyDesc.resx">
+      <DependentUpon>FormModiflyDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child_Form\Modifly\FormModiflyEmail.resx">
+      <DependentUpon>FormModiflyEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child_Form\Modifly\FormModiflyName.resx">
+      <DependentUpon>FormModiflyName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child_Form\Modifly\FormModiflyPassword.resx">
+      <DependentUpon>FormModiflyPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.en-TT.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.en.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.hsb.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.zh-Hans.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.zh-Hant.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,6 +204,62 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\app_cart_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_close_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_exit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_expand_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_game_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_list_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_minimize_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_move_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_setting_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_lock_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_lock_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_lock_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_user_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_lock_icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_mail_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_mail_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_question_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_question_icon1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
