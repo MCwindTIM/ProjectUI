@@ -28,7 +28,11 @@ namespace UI.Child_Form
                     btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
                 }
             }
-            lbl_test.ForeColor = ThemeColor.SecondaryColor;
+            foreach (Label lbls in this.Controls.OfType<Label>())
+            {
+                Label lbl = (Label)lbls;
+                lbl.ForeColor = ThemeColor.SecondaryColor;
+            }
         }
 
         private void FormGames_Load(object sender, EventArgs e)

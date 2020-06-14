@@ -28,27 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_test = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lbl_test
+            // label1
             // 
-            this.lbl_test.AutoSize = true;
-            this.lbl_test.Font = new System.Drawing.Font("Bahnschrift Condensed", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_test.Location = new System.Drawing.Point(-3, 146);
-            this.lbl_test.Name = "lbl_test";
-            this.lbl_test.Size = new System.Drawing.Size(809, 107);
-            this.lbl_test.TabIndex = 0;
-            this.lbl_test.Text = "Test Games Page";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "GSD Zombie";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "GSD World";
             // 
             // FormGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbl_test);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Name = "FormGames";
-            this.Text = "FormGames";
+            this.Text = "Games";
             this.Load += new System.EventHandler(this.FormGames_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -57,6 +68,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_test;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
